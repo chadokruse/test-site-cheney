@@ -1,0 +1,33 @@
+# Grantmaker settings
+foundation_name: Elizabeth F. Cheney Foundation
+foundation_tagline: Encouraging artistic and cultural endeavor
+email_public: egeraghty@cheneyfoundation.org
+#grant_application_login: https://www.grantinterface.com/Common/LogOn.aspx?eqs=kw_somelongstring
+
+# Social media settings
+# Enter the full profile url (e.g. https://twitter.com/smartergiving)
+twitter: 
+facebook: 
+instagram: 
+github: 
+
+# Site settings
+# Meta tags
+title: # Default's to foundation_name if left blank
+description: > # this means to start on the next line (which needs to be indented two spaces)"
+  The Elizabeth F. Cheney Foundation is a private foundation which focuses on enriching the cultural and artistic life of the metropolitan Chicago area
+
+# Google settings
+live: false # switch to true when you're ready for the site to be indexed by Google and other web crawlers
+
+# Jekyll settings
+sass:
+    sass_dir: assets/css/_sass
+baseurl: "/cheney" # Leave this blank unless your site is located on a subpath, e.g. /blog
+url: "http://grantmakers.github.io" # Typically http://www.yourdomain.org
+
+
+# Build settings
+exclude: 
+  - README.md
+  - /images/photoshop-helpers

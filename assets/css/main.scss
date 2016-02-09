@@ -1,0 +1,144 @@
+---
+---
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import url('font-awesome.min.css');
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+
+/*
+	Alpha by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+	@import "libs/skel";
+
+	@include skel-breakpoints((
+		wide: '(max-width: 1680px)',
+		normal: '(max-width: 1280px)',
+		narrow: '(max-width: 980px)',
+		narrower: '(max-width: 840px)',
+		mobile: '(max-width: 736px)',
+		mobilep: '(max-width: 480px)'
+	));
+
+	@include skel-layout((
+		reset: 'full',
+		boxModel: 'border',
+		grid: ( gutters: 2em ),
+		conditionals: true,
+		containers: 60em,
+		breakpoints: (
+			narrow: (
+				containers: 90%,
+			),
+			narrower: (
+				containers: (90%, true),
+			),
+			mobile: (
+				containers: (100%, true),
+			),
+		)
+	));
+
+/*********************************************************************************/
+/* HTML5Up Theme                                                                 */
+/*********************************************************************************/
+/*
+  Alpha by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+@import "libs/theme";
+
+/*********************************************************************************/
+/* Site CSS                                                                      */
+/*********************************************************************************/
+#banner {
+  background-image:   url('images/overlay.png'),    url('../../images/seats.jpg');
+}
+
+.fa-theatre {
+  //content:"\f001"
+  content: url('/images/theatre.svg');
+}
+
+.fa-dance {
+  content: url('/images/dance.svg');
+}
+
+// Landing
+.landing .box-img-only {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  .image.featured {
+    margin-top: 0;
+    margin-bottom: 0;
+    img {
+      border-radius: 6px;
+    }
+  }
+  .image-credit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: .9em;
+    color: #fff;
+    a, a:hover {
+      color: #fff;
+    }
+  }
+}
+
+#cta {
+  .button-outline {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+    color: #fff;
+    min-width: 12em;
+  }
+}
+
+// Contact
+.labeled-icons {
+  list-style: none;
+  padding: 0;
+
+  li {
+    line-height: 1.75em;
+    margin: 1.5em 0 0 0;
+    padding-left: 2.25em;
+    position: relative;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    h4 {
+      color: _palette(accent1, fg-light);
+      left: 0;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: 1em;
+    }
+  }
+}
+
+ul {
+  &.labeled-icons {
+    li {
+      padding-left: 2em;
+
+      h3 {
+        line-height: 1.75em;
+      }
+    }
+  }
+}

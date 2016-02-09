@@ -1,0 +1,36 @@
+---
+layout: interior-custom
+header: Grant Recipients
+subheader: 
+image_filename: 
+data_filename: 2014
+group_by_field: grant_year
+permalink: /grant-recipients/
+---
+<section id="main" class="container">
+  <header>
+    <h2>{{ page.header }}</h2>
+    <p><a class="button special" href="#current">Current</a> <a class="button alt" href="#historical">Historical</a></p>
+  </header>
+
+  <div id="current" class="box">
+    {% if page.image_filename %}
+      <span class="image featured"><img src="{{ site.baseurl }}/images/{{ page.image_filename }}" alt="" /></span>
+    {% endif %}
+    {% include grants.html %}
+  </div>
+
+  <div id="historical" class="box">
+    {% if page.image_filename %}
+      <span class="image featured"><img src="{{ site.baseurl }}/images/{{ page.image_filename }}" alt="" /></span>
+    {% endif %}
+    <p>
+      <span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+      </span>
+      <a href="{{ site.baseurl }}/documents/grants2012-2013.pdf">&nbsp;Grants 2012-13</a>
+    </p>
+  </div>
+
+</section>

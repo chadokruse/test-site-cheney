@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<!--
+  Alpha by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+{% include head.html %}
+<html>
+  <body>
+    <div id="page-wrapper">
+      {% include header.html %}
+        <section id="main" class="container">
+          <header>
+            <h2>{{ page.header }}</h2>
+            <p>{{ page.subheader }}</p>
+          </header>
+
+          <div class="box">
+            {% if page.image_filename %}
+              <span class="image featured"><img src="{{ site.baseurl }}/images/{{ page.image_filename }}" alt="" /></span>
+            {% endif %}
+            {{ content }}
+          </div>
+
+        </section>
+      {% include footer.html %}
+    </div>
+    {% include body-scripts.html %}
+  </body>
+</html>
