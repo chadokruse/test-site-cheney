@@ -23,7 +23,7 @@ live: false # switch to true when you're ready for the site to be indexed by Goo
 # Jekyll settings
 sass:
     sass_dir: assets/css/_sass
-baseurl: "/cheney" # Leave this blank unless your site is located on a subpath, e.g. /blog
+baseurl: "/test-site-cheney" # Leave this blank unless your site is located on a subpath, e.g. /blog
 url: "https://www.chadkruse.com" # Typically http://www.yourdomain.org
 
 
