@@ -24,7 +24,7 @@ live: false # switch to true when you're ready for the site to be indexed by Goo
 sass:
     sass_dir: assets/css/_sass
 baseurl: "/cheney" # Leave this blank unless your site is located on a subpath, e.g. /blog
-url: "https://chadkruse.com" # Typically http://www.yourdomain.org
+url: "https://www.chadkruse.com" # Typically http://www.yourdomain.org
 
 
 # Build settings
